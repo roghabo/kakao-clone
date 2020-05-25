@@ -21,6 +21,10 @@
   padding: 0px 20px;
 }
 
+.chat {
+  padding: 10px 0px;
+}
+
 .chat__write--container {
   position: fixed;
   bottom: 0px;

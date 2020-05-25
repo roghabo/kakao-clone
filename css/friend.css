@@ -20,19 +20,59 @@
   height: 60px;
 }
 
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend__avatar.two-avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 0;
+  border: 2px solid white;
+}
+
+.friend__avatar.two-avatar-top {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.friend__avatar.two-avatar-bottom {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: 0;
+}
+
+.friend__avatar.four-avatar {
+  width: 28px;
+  height: 28px;
+}
+
 .friend .friend__column {
   display: flex;
   align-items: center;
+  padding: 10px 0px;
 }
 
-.friend .friend__avatar {
-  margin-right: 15px;
+.friend .friend__column-nowchat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0px;
 }
 
 .friend__content .friend__name {
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
+}
+.friend__content .friend__name-group {
+  display: inline;
+}
+
+.friend__content .friend__number {
+  opacity: 0.6;
 }
 
 .friend__content .friend__status,
@@ -42,6 +82,13 @@
 
 .friend__content .friend__bottom-text {
   font-size: 14px;
+  display: block;
+}
+
+.friend__content .friend__bottom-text-group {
+  font-size: 14px;
+  display: block;
+  padding-top: 5px;
 }
 
 .friend__content .friend__status {
@@ -51,6 +98,20 @@
 .friend__content .friend__status,
 .friend .chat__timestamp {
   font-size: 12px;
+}
+
+.friend__column-nowchat .nav__badge {
+  font-size: 10px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  text-align: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 5px;
 }
 
 .friend .friend__now-listening {
@@ -75,4 +136,60 @@
   align-items: center;
   background-color: #f5f5f5;
   border-radius: 5px;
+}
+
+.friend__bottom-text {
+  opacity: 0.6;
+}
+
+.friend__column .chat__timestamp {
+  opacity: 0.6;
+}
+
+.friend__column-nowchat .chat__timestamp {
+  opacity: 0.6;
+}
+
+.friend__column .plus-friend {
+  background-color: #fce006;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  margin-right: 15px;
+  color: #3a1e1d;
+}
+
+.friend__column .kakao-map {
+  background-color: #fce006;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 35px;
+  border-radius: 20px;
+  margin-right: 15px;
+  color: #0973f4;
+}
+
+.friend__column .friend__avatar-two {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+}
+
+.friend__column .friend__avatar-four {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  grid-template: repeat(2, 30px) / repeat(2, 30px);
+  margin-right: 10px;
 }
